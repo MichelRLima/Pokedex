@@ -86,10 +86,11 @@ console.log(pokemon)
             <h4>{pokemon.nome}</h4>
             <img src={pokemon.foto} alt='pokemon' />
             <div>
+            <p className={pokemon.tipo}>{pokemon.tipo}</p>
               <div className='descricaoPokemon'>
-              <p className={pokemon.tipo}>{pokemon.tipo}</p>
-              <p>{((parseFloat(pokemon.altura))/10).toFixed(2)}m</p>
-              <p>{((parseFloat(pokemon.peso))/10).toFixed(2)}Kg</p>
+              
+              <p>Altura: {((parseFloat(pokemon.altura))/10).toFixed(2)}m</p>
+              <p>Peso: {((parseFloat(pokemon.peso))/10).toFixed(2)}Kg</p>
               </div>
              
             </div>

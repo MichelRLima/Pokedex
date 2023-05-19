@@ -152,8 +152,9 @@
 
 .descricaoPokemon p{
   margin: 10px 10px;
-  text-transform: capitalize;
+  
   padding: 5px 7px;
+ 
   
   
 }
@@ -164,6 +165,8 @@
   border: 1px solid rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
   border-radius: 15px;
+  text-transform: capitalize;
+  text-align: center;
 }
 
 .electric{
@@ -172,6 +175,9 @@
   background-color: rgb(155, 128, 7);
   border-radius: 15px;
   color: white;
+  margin: 0 auto;
+  text-transform: capitalize;
+  text-align: center;
 }
 
 .fighting, .fire, .dragon{
@@ -180,6 +186,8 @@
   background-color: rgb(184, 24, 24);
   border-radius: 15px;
   color: white;
+  text-transform: capitalize;
+  text-align: center;
 }
 
 .poison, .grass, .fairy{
@@ -188,6 +196,8 @@
   background-color: rgb(25, 90, 60);
   border-radius: 15px;
   color: white;
+  text-transform: capitalize;
+  text-align: center;
 }
 
 .ground, .rock, .bug{
@@ -196,6 +206,8 @@
   background-color: #552b01;
   border-radius: 15px;
   color: white;
+  text-transform: capitalize;
+  text-align: center;
 }
 
 .water, .ice{
@@ -204,6 +216,8 @@
   background-color: #0c4396;
   border-radius: 15px;
   color: white;
+  text-transform: capitalize;
+  text-align: center;
 }
 
 .dark{
@@ -212,4 +226,6 @@
   background-color: #000000;
   border-radius: 15px;
   color: white;
+  text-transform: capitalize;
+  text-align: center;
 }
