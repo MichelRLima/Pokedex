@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
 import './App.css';
 import axios from 'axios'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -83,7 +83,7 @@ console.log(pokemon)
         <div className='pokemon'>
 
             <h4>{pokemon.nome}</h4>
-            <img src={pokemon.foto} />
+            <img src={pokemon.foto} alt='pokemon' />
             <div>
               <div className='descricaoPokemon'>
               <p className={pokemon.tipo}>{pokemon.tipo}</p>
