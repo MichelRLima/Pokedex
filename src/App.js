@@ -83,7 +83,7 @@ console.log(pokemon)
      {checkpokemon &&(
         <div className='pokemon'>
 
-            <h4>{pokemon.nome}</h4>
+            <h4>{pokemon.nome}</h4><span>ID:{pokemon.id}</span>
             <img src={pokemon.foto} alt='pokemon' />
             <div>
             <p className={pokemon.tipo}>{pokemon.tipo}</p>
