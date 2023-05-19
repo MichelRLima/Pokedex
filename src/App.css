@@ -1,0 +1,215 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(200%); /* Inicia o texto fora da tela à direita */
+  }
+  to {
+    transform: translateX(50%); /* Termina o texto na posição original (esquerda) */
+  }
+}
+
+@keyframes slideOu {
+  from {
+    transform: translateX(-100%); /* Inicia o texto fora da tela à direita */
+  }
+  to {
+    transform: translateX(0); /* Termina o texto na posição original (esquerda) */
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translatey(20%); /* Inicia o texto fora da tela à direita */
+  }
+  to {
+    transform: translatey(0); /* Termina o texto na posição original (esquerda) */
+  }
+}
+
+
+.titulo{ 
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  background-color: rgb(163, 39, 39);
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius:60px;
+ 
+}
+
+.titulo h2{
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  font-family: "Bangers", sans-serif;
+  margin-top: 25px;
+}
+
+.imagem{
+  width: 60px;
+  height: 60px;
+  margin-top: 29px;
+ margin-right: -9px;
+  animation: App-logo-spin infinite 3s linear;
+  background-image: url('images/pokeball.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.containerBuscar{
+  width: 100%;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.TituloBuscar{
+  width: 50%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  animation: slideIn 2s forwards;
+  font-family: "Press Start 2P", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  
+}
+
+.buscar input{
+  width: 250px;
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 5px;
+  border: 0.5px solid red;
+  text-align: center;
+  outline: none;
+}
+.buscar{
+  animation: slideOu 2s forwards;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.buscar button{
+  width: 250px;
+  animation: slideOu 2s forwards;
+  margin: 5px auto;
+  
+}
+.buscar button:hover{
+  background-color: rgb(163, 39, 39);
+}
+
+.pokemon{
+  width: 350px;
+  height: auto;
+  border: 5px solid #efefef;
+  animation: slideUp 2s forwards;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  transition: 1s;
+  background-color: #b4b4b4;
+}
+.pokemon:hover{
+ border-color: #414141;
+}
+.pokemon h4{
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 15px;
+  font-family: "Press Start 2P", sans-serif;
+}
+
+.descricaoPokemon{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.descricaoPokemon p{
+  margin: 10px 10px;
+  text-transform: capitalize;
+  padding: 5px 7px;
+  
+  
+}
+
+
+.normal, .flying, .steel, .psychic{
+  padding: 5px 7px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+}
+
+.electric{
+  padding: 5px 7px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(155, 128, 7);
+  border-radius: 15px;
+  color: white;
+}
+
+.fighting, .fire, .dragon{
+  padding: 5px 7px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(184, 24, 24);
+  border-radius: 15px;
+  color: white;
+}
+
+.poison, .grass, .fairy{
+  padding: 5px 7px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(25, 90, 60);
+  border-radius: 15px;
+  color: white;
+}
+
+.ground, .rock, .bug{
+  padding: 5px 7px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: #552b01;
+  border-radius: 15px;
+  color: white;
+}
+
+.water, .ice{
+  padding: 5px 7px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: #0c4396;
+  border-radius: 15px;
+  color: white;
+}
+
+.dark{
+  padding: 5px 7px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: #000000;
+  border-radius: 15px;
+  color: white;
+}
