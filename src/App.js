@@ -20,6 +20,7 @@ function App() {
     )
 
 
+
 function Buscar(){
       
 
@@ -75,7 +76,7 @@ console.log(pokemon)
      </div>
 
      <div className='buscar'>
-     <input onChange={(e) => setBuscar(e.target.value)} placeholder="Ex: Pikachu ou 25" type='text' inputMode='text'></input>
+     <input onChange={(e) => setBuscar((e.target.value).toLowerCase())} placeholder="Ex: Pikachu ou 25" type='text' inputMode='text'></input>
      <Button onClick={Buscar} variant="secondary">Search</Button>
      </div>
 
