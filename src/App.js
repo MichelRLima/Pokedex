@@ -80,7 +80,7 @@ console.log(pokemon)
      <Button onClick={Buscar} variant="secondary">Search</Button>
      </div>
 
-     {checkpokemon &&(
+     {checkpokemon ? (
         <div className='pokemon'>
 
             <h4>{pokemon.nome}</h4><span>ID:{pokemon.id}</span>
@@ -98,7 +98,12 @@ console.log(pokemon)
 
 
         </div>
-     )}
+     ):
+     <div className='containerSearch'>
+        <div className='gifPikachu'></div>
+        <div className='Search'></div>
+     </div>}
+   
      
 
     </div>

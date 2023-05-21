@@ -90,6 +90,7 @@
   font-family: "Press Start 2P", sans-serif;
   text-align: center;
   font-size: 30px;
+ 
   
 }
 
@@ -239,4 +240,25 @@ margin-top: -60px;
 color: #585858;
 font-family: "Press Start 2P", sans-serif;
 font-size: 8px;
+}
+
+
+
+.gifPikachu{
+  
+  background-image: url('./images/PikachuGif.gif');
+  width: 96px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 15px auto;
+}
+
+.Search{
+  background-image: url('./images/search.gif');
+  width: 150px;
+  height: 200px;
+  margin: 0 auto;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
